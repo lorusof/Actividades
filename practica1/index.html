@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Titulo de la practica de laboratorio</h1>
+                        <h1 class="fw-bolder mb-1">Arduino y su funcionamiento</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
 <!--<img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." /> -->                            
@@ -74,7 +74,7 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="Arduino_UNO.R4.webp" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
@@ -88,7 +88,7 @@
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">1 Placa Arduino (Uno, Mega, etc.)
+                        <p class="fs-6 mb-4">1 Placa Arduino Uno
                             1 LED externo
                             1 Resistencia de 220Ω
                             1 Display de 7 segmentos (ánodo o cátodo común)
@@ -102,45 +102,21 @@
                         <p class="fs-6 mb-4">1. Exploración de Arduino
                             Antes de programar, analizamos la estructura de la placa Arduino, sus pines y la forma en que se carga el código en el microcontrolador.
                             
-                            2. Control del LED integrado
+                            1. Control del LED integrado
                             Escribimos un código para encender y apagar el LED incorporado en la placa con intervalos de 1 segundo:
+                            <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="Codigo_Led.png" alt="..." /></figure>
                             
-                            cpp
-                            Copiar
-                            Editar
-                            void setup() {
-                              pinMode(LED_BUILTIN, OUTPUT);
-                            }
-                            
-                            void loop() {
-                              digitalWrite(LED_BUILTIN, HIGH);
-                              delay(1000);
-                              digitalWrite(LED_BUILTIN, LOW);
-                              delay(1000);
-                            }
-                            3. Control de un LED externo
+                            2. Control de un LED externo
                             Conectamos un LED en el pin 9 de Arduino con una resistencia de 220Ω y usamos el siguiente código para hacerlo parpadear:
                             
-                            cpp
-                            Copiar
-                            Editar
-                            int ledPin = 9;
-                            
-                            void setup() {
-                              pinMode(ledPin, OUTPUT);
-                            }
-                            
-                            void loop() {
-                              digitalWrite(ledPin, HIGH);
-                              delay(1000);
-                              digitalWrite(ledPin, LOW);
-                              delay(1000);
-                            }
+                            <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="Codigo_LED2.png" alt="..." /></figure>
                             4. Activación de un display de 7 segmentos
                             Conectamos los pines del display a Arduino con resistencias de 220Ω para cada segmento.
                             Definimos qué segmentos encender para cada número del 0 al 9.
                             Programamos un contador que mostrara los números en secuencia con intervalos de 1 segundo.
-                            Código básico para mostrar números en el display de 7 segmentos</p>
+                            Código básico para mostrar números en el display de 7 segmentos.
+                            <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="Display.png" alt="..." /></figure>
+                        </p>
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
